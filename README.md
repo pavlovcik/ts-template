@@ -28,7 +28,7 @@ bun cy:run
 To start Jest tests, run
 
 ```shell
-bun test
+bun run test
 ```
 
 ## Sync any repository to latest `ts-template`
