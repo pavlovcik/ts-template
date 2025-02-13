@@ -30,7 +30,7 @@ jobs:
           bun add simple-git
       - name: Check for Empty Strings
         run: |
-          bun .github/empty-string-checker.ts
+          bun run .github/empty-string-checker.ts
         env:
           GITHUB_TOKEN: ${{ steps.get_installation_token.outputs.token || secrets.GITHUB_TOKEN }}
           GITHUB_REPOSITORY: ${{ github.repository }}

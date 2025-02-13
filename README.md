@@ -14,13 +14,13 @@ This template repository includes support for the following:
 To test with Cypress Studio UI, run
 
 ```shell
-bun cy:open
+bun run cy:open
 ```
 
 Otherwise, to simply run the tests through the console, run
 
 ```shell
-bun cy:run
+bun run cy:run
 ```
 
 ### Jest

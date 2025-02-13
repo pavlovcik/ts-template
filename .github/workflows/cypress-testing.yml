@@ -24,7 +24,7 @@ jobs:
         with:
           install-command: bun install
           build: bun run build
-          start: bun start
+          start: bun run start
         env:
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
