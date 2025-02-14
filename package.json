@@ -19,7 +19,8 @@
     "knip-ci": "knip --no-exit-code --reporter json --config .github/knip.ts",
     "test": "jest --setupFiles dotenv/config --coverage",
     "cy:open": "cypress open",
-    "cy:run": "cypress run"
+    "cy:run": "cypress run",
+    "prepare": "husky"
   },
   "keywords": [
     "typescript",
