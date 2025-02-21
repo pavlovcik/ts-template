@@ -42,6 +42,7 @@
     "@jest/globals": "29.7.0",
     "@mswjs/data": "0.16.1",
     "@octokit/rest": "^21.0.2",
+    "@types/bun": "latest",
     "@types/jest": "29.5.12",
     "@types/node": "^20.11.19",
     "cspell": "^8.4.0",
@@ -66,7 +67,7 @@
   },
   "lint-staged": {
     "*.ts": [
-      "yarn prettier --write",
+      "bun prettier --write",
       "eslint --fix"
     ],
     "src/**.{ts,json}": [
