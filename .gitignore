@@ -7,7 +7,6 @@ node_modules
 .pnp.cjs
 .pnp.loader.mjs
 .env
-*.lock
 static/dist
 coverage
 junit.xml
