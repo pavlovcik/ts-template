@@ -6,11 +6,12 @@
   "author": "Ubiquity DAO",
   "license": "MIT",
   "engines": {
-    "node": ">=20.10.0"
+    "node": ">=20.10.0",
+    "bun": ">=1.0.0"
   },
   "scripts": {
-    "start": "tsx build/esbuild-server.ts",
-    "build": "tsx build/esbuild-build.ts",
+    "start": "bun build/esbuild-server.ts",
+    "build": "bun build/esbuild-build.ts",
     "format": "run-s format:lint format:prettier format:cspell",
     "format:lint": "eslint --fix .",
     "format:prettier": "prettier --write .",
@@ -42,6 +43,7 @@
     "@jest/globals": "29.7.0",
     "@mswjs/data": "0.16.1",
     "@octokit/rest": "^21.0.2",
+    "@types/bun": "latest",
     "@types/jest": "29.5.12",
     "@types/node": "^20.11.19",
     "cspell": "^8.4.0",
@@ -66,7 +68,7 @@
   },
   "lint-staged": {
     "*.ts": [
-      "yarn prettier --write",
+      "bun prettier --write",
       "eslint --fix"
     ],
     "src/**.{ts,json}": [
