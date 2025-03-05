@@ -39,7 +39,7 @@ A bash function that can do this for you:
 #!/bin/bash
 # shellcheck shell=bash
 
-gogo() {
+get-ts-template() {
   local branch_name
   branch_name=$(git rev-parse --abbrev-ref HEAD)
 
