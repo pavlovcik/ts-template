@@ -9,8 +9,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Set up bun
-        uses: oven-sh/setup-bun@v2
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v1
+        with:
+          bun-version: latest
       - name: Get GitHub App token
         if: ${{ env.APP_ID && env.APP_PRIVATE_KEY }}
         uses: tibdex/github-app-token@v1.7.0
