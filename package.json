@@ -18,10 +18,10 @@
     "format:cspell": "cspell **/*",
     "knip": "knip --config .github/knip.ts",
     "knip-ci": "knip --no-exit-code --reporter json --config .github/knip.ts",
-    "prepare": "husky install",
     "test": "jest --setupFiles dotenv/config --coverage",
     "cy:open": "cypress open",
-    "cy:run": "cypress run"
+    "cy:run": "cypress run",
+    "prepare": "husky"
   },
   "keywords": [
     "typescript",
@@ -68,7 +68,7 @@
   },
   "lint-staged": {
     "*.ts": [
-      "bun prettier --write",
+      "prettier --write",
       "eslint --fix"
     ],
     "src/**.{ts,json}": [
